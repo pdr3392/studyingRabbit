@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db2:
+    build: .
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PORT: 5432
+      POSTGRES_SERVER: localhost
+      POSTGRES_USER: users
+      POSTGRES_PASSWORD: Users@2023
+      POSTGRES_DB: postgres
+      PGUSER: postgres

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db1:
+    build: .
+    ports:
+      - '5433:5433'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: email
+      POSTGRES_PASSWORD: Email@2023
+      PGPORT: 5433
